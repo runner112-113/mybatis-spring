@@ -297,6 +297,7 @@ public class ClassPathMapperScanner extends ClassPathBeanDefinitionScanner {
         // ignore
       }
 
+      // 设置bean的class为MapperFactoryBean
       definition.setBeanClass(this.mapperFactoryBeanClass);
 
       definition.getPropertyValues().add("addToConfig", this.addToConfig);
